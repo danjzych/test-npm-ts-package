@@ -1,0 +1,23 @@
+{
+  "name": "test-npm-ts-package",
+  "version": "1.0.0",
+  "description": "Testing npm ts structures before building actual package for npm release",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest ts --passWithNoTests --reporter=verbose"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Daniel Zych",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
