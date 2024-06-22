@@ -2,6 +2,7 @@
   "name": "test-npm-ts-package",
   "version": "0.0.1",
   "description": "Testing npm ts structures before building actual package for npm release",
+  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
