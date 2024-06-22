@@ -2,7 +2,12 @@
   "name": "test-npm-ts-package",
   "version": "1.0.0",
   "description": "Testing npm ts structures before building actual package for npm release",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
